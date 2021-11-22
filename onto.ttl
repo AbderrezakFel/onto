@@ -55,7 +55,6 @@ family:Personne a rdfs:Class ;
 
 
 family:a_enfant a rdf:Property ;
-              rdf:type owl:InverseFunctionalProperty ;
               rdfs:domain family:Personne ;
               rdfs:range family:Personne .
 
@@ -104,3 +103,8 @@ family:a_mere a rdf:Property ;
             rdfs:subPropertyOf family:parent ;
             rdfs:domain family:Personne ;
             rdfs:range family:Mere .
+
+
+family:genre a rdf:Property ;
+              rdfs:domain family:Personne ;
+              rdfs:range family:Personne .
